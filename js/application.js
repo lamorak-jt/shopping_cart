@@ -8,7 +8,7 @@ var updateItemTotal = function (item) {
  
   var itemTotal = itemQty * itemPrice;
 
-  $(item).children('.total').html(itemTotal);
+  $(item).children('.total').html(itemTotal.toLocaleString('en-US'));
 
   return itemTotal;
 }
@@ -30,7 +30,7 @@ var updateCartTotal = function () {
     cartTotal = 0;
   }
   
-  $('.cart-total').html('$ ' + cartTotal);
+  $('.cart-total').html('$ ' + cartTotal.toLocaleString('en-US'));
   
 }
 
