@@ -54,8 +54,16 @@ $(document).ready(function () {
     event.preventDefault();   
     
     var item = $('input[id=new-item-name]').val();
+
+    if (item.length < 1){
+      return;
+    }
     
     var price = $('input[id=new-item-price]').val(); 
+
+    if (price.length < 1) {
+      return;
+    }
     
     $('tbody').append('<tr>' +
       '<td class="item">' + item + '</td>' +
