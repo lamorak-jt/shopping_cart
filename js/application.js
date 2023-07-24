@@ -60,7 +60,7 @@ $(document).ready(function () {
     $('tbody').append('<tr>' +
       '<td class="item">' + item + '</td>' +
       '<td class="price">' + price + '</td>' +
-      '<td class="quantity"><input class="input-quantity" type="number" value=""/></td>' + '<td class="total"></td>' + '<td><button class="btn btn-light btn-sm btn-remove">Remove</button></td>' +
+      '<td class="quantity"><input class="input-quantity" placeholder="Enter quantity" type="number" value=""/></td>' + '<td class="total"></td>' + '<td><button class="btn btn-light btn-sm btn-remove">Remove</button></td>' +
     '</tr>');
 
     updateCartTotal();
