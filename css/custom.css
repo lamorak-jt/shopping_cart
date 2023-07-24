@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+  .btn-remove {
+    width: 100%;
+  } 
+  
+  .cart, .row-add {
+    font-size: 0.8em;
+  }
+  
+  .btn-add {
+    margin-top: 10px;
+  } 
+
+}
+
+.cart-total {
+  font-size: 1.5em;
+}
+

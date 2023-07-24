@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/application.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Shopping cart</h1>
+      <div class="cart">
+        <table class="table table-responsive">
+          <thead>
+            <tr>
+              <th scope="col">Item</th>
+              <th scope="col">Price ($)</th>
+              <th scope="col" class="input-quantity">Quantity</th>
+              <th scope="col">Total ($)</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="item">Soap</td>
+              <td class="price">5</td>
+              <td class="input-quantity" >
+                <input name="name-quantity" placeholder="Enter quantity" type="number">
+              </td>
+              <td class="total"></td>
+              <td><button class="btn btn-light btn-sm btn-remove">Remove</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>Add new item</h3>
+      <div class="row row-add">        
+        <div class="col-xs-6 col-lg-3">
+          <input placeholder="New item name" id="new-item-name">
+        </div>
+        <div class="col-xs-6 col-lg-3">
+          <input placeholder="New item price" id="new-item-price">
+        </div>
+        <div class="col-xs-6 col-lg-3">
+          <button class="btn btn-light btn-sm btn-add">Add item</button>
+        </div>
+      </div>
+      <div class="row-total">
+        <h3>Total price</h3>
+        <div class="cart-total">          
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
