@@ -22,9 +22,12 @@ var updateCartTotal = function () {
     var itemTotal = updateItemTotal(item);
     itemTotals.push(itemTotal);
     });
-
-  console.log(itemTotals);
-  var cartTotal = itemTotals.reduce(total);
+  
+  if (itemTotals.length < 1) {
+    cartTotal = 0;
+  } else {
+    var cartTotal = itemTotals.reduce(total);
+  }
 
   if (Number.isNaN(cartTotal)) {
     cartTotal = 0;
